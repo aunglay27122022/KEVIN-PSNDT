@@ -1,0 +1,393 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #111;
+      transition: 0.3s;
+     
+    }
+
+    body.dark {
+      background-color: #121212;
+      color: #fff;
+    }
+
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 400px;
+      height: 1000px;
+      object-fit: cover;
+      z-index: -1;
+       filter: blur(5px);
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 10;
+    }
+
+    .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .menu-toggle {
+      font-size: 24px;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    nav a {
+      color: white;
+      padding: 10px 0;
+      text-decoration: none;
+    }
+
+    nav.show {
+      display: flex;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+  
+.Avatar {
+     padding-right: 0px;
+     padding-top: 0px;
+      width: 200px;
+      height: 200px ;
+      border-radius: 20%;
+      border: 3px solid #0ff;
+      animation: float 3s ease-in-out infinite;
+      box-shadow: 0 0 30px #0ff;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #0ff;
+      text-shadow: 0 0 15px #0ff;
+    }
+    .icons {
+      margin-top: 20px;
+      display: flex;
+      gap: 50px;
+      padding-top: 30px;
+      
+    }
+    .icons img {
+      width: 60px;
+      height: 60px;
+      filter: drop-shadow(0 0 10px #0ff);
+      transition: transform 0.3s ease;
+    }
+    .icons img:hover {
+      transform: scale(2.2);
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    /*gellary*/
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #191919;
+}
+.card {
+  width: 350px;
+  height: 258px;
+  background: rgb(173, 173, 173);
+  position: relative;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin: 3vw 1.5vw;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 80px;
+  padding: 1rem;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 1rem;
+  transform: scale(1);
+  color: white;
+  border: 1px solid black;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.content p {
+  font-size: 0.8em;
+}
+.card:hover .content {
+  transform: scale(0.92);
+  bottom: 6px;
+  height: 170px;
+}
+
+
+    /* Contact */
+   #telegramForm {
+      margin-top: 20px;
+      background: black;
+      padding: 20px;
+     border-radius: 20px;
+    }
+
+    #telegramForm input,
+    #telegramForm textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 2px solid #37B7FF;
+      border-radius: 3px;
+    }
+
+  
+
+    /* Dark mode form fix */
+    body.dark .contact-form {
+      background: rgba(0,0,0,0.8);
+    }
+
+    /* Toggle Btn */
+    #theme-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #000;
+      color: #fff;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      z-index: 99;
+    }
+    
+  /*ပုံထဲက စာတွေကို အလှထည့်တာ*/ 
+ 
+    h5{
+color: #FFB800;
+text-align: center;
+font-size: 15px;
+text-shadow: 0px 0px 3px black;
+}
+
+.image-text{
+color: white;
+text-align: center;
+font-size: 15px;
+text-shadow: 0px 0px 3px blue;
+}
+    
+ /*button design*/   
+    
+.send-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #37B7FF ! important ; /* အပြာရောင် (သင်နှစ်သက်တဲ့အရောင် ပြောင်းနိုင်ပါတယ်) */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px ! important;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 15px ! important;
+  margin-left: 0px ! important;
+  height: 50px;
+  width: 100%;
+  
+}
+
+.send-button:hover {
+  background-color: #4AFFB3 ! important; /* Hover လုပ်ရင် နည်းနည်းပိုမည်းသွားအောင် */
+}
+
+.send-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/*website အစမှာ မြင်ရတယ် login form design */  
+
+
+#passwordForm {
+      margin-top: 20px;
+      background: #000000;
+      padding: 20px;
+     border-radius: 20px;
+     border-color: #7FFF00;
+     border-style: solid;
+     border-width: 2px;
+     text-align: center;
+     width: 300px;
+    }
+    
+  
+    
+#password{
+ width: 100%;
+ height: 50px;
+ border-color: #7FFF00;
+     border-style: solid;
+     border-width: 2px;
+     border-radius: 10px;
+     background-color: none;
+     color: #7FFF00;
+}
+
+#labelforpassword{
+color: #7FFF00;
+font-weight: bold;
+}
+
+#button-for-password{
+width: 150px;
+ height: 50px;
+ border-color: #FFFFFF;
+     border-style: solid;
+     border-width: 2px;
+     border-radius: 10px;
+     background-color: #7FFF00;
+     color: black;
+     font-size: 20px;
+     font-weight: bold;
+     }
+     
+     
+#button-for-password:hover {
+  background-color: red ; /* Hover လုပ်ရင် နည်းနည်းပိုမည်းသွားအောင် */
+}
+
+
+
+.footer {
+  color: white;
+  padding: 40px 20px;
+  text-align: none;
+  font-family: Arial, sans-serif;
+}
+
+.footer h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.icon img {
+  width: 45px;
+  height: 45px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0%;
+}
+
+.icon:hover img {
+  transform: scale(1.5);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.icon.telegram:hover img {
+  background-color: #0088cc;
+}
+
+.icon.tiktok:hover img {
+  background-color: #010101;
+}
+
+.icon.gmail:hover img {
+  background-color: #d44638;
+}
+
+.icon.facebook:hover img {
+  background-color: #1877f2;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  color: white;
+  margin-top: 10px;
+}
+
